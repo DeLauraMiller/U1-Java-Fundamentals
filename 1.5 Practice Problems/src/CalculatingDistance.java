@@ -10,8 +10,9 @@ public class CalculatingDistance {
     public static void main(String[] args) {
         int mph = 55;
         int min = 45;
-        double hourTaken = 60.00/min;
-        double miles = mph/hourTaken;
+
+        double hourTaken = min/60.00;
+        double miles = hourTaken * mph;
 
         System.out.println("This vehicle traveled: " + miles + " miles.");
 
